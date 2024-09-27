@@ -1,19 +1,24 @@
 main {
     background-color: rgb(207, 220, 210);
+    border: none;
 }
 header {
     background-color: black;
+    border: none;
 }
 
 nav {
     background-color: rgb(23, 23, 23);
-    border: 2px solid rgb(111, 103, 55);
+    border: none;
+    border-top: 2px solid rgb(111, 103, 55);
 }
 
 aside {
 background-color: rgb(56, 112, 71);
+border: none;
 }
 
 footer {
     background-color: slategray;
+    border: none;
 }
