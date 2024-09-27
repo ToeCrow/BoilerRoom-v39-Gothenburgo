@@ -64,8 +64,8 @@ footer {
    "nav"
    "main"
    "aside"
-   "footer";
-  grid-template-columns: 1fr;
+   "footer ";
+  grid-template-columns: 1fr ;
   grid-template-rows: auto auto 1fr auto auto;
   min-height: 100vh;
  }
