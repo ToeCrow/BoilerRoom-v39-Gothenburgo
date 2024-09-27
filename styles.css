@@ -1,3 +1,5 @@
+
+/* Thomas börjar här */
 body {
  display: grid;
  padding: 0;
@@ -14,40 +16,29 @@ body {
 
 header {
  grid-area: header;
- background-color: black;
  display: flex;
  flex-direction: row;
  justify-content: space-between ;
 }
 
 .img-golden{
- width: 200px;
- border: 0px solid black;
- border-radius: 9999px;
+ width: auto;
 }
 
-h1 {
+h1{
  color: white ;
- font-size: 4.5rem;
-
 }
+
+
 nav {
- border: 5px solid blue;
  width: clamp(10rem, 20%, 30%);
 }
 
 nav ul {
- margin-top: 1rem;
- display: flex;
- flex-direction: column;
  gap: clamp(.5rem, .75rem, .8rem);
- padding: 2rem 1rem 1rem 1rem;
- text-align: center;
- font-size: 110%;
 }
 
 nav li {
-
  list-style-type: none;
  align-items: center;
 }
@@ -57,6 +48,33 @@ nav a {
  text-decoration: none;
  font-weight: 700;
 }
+
+/* Börjar media query min 1025px */
+.img-golden{
+ border: 1px solid white;
+ border-radius: 50%;
+ height: 100%;
+}
+
+header {
+ background-color: black;
+ flex-direction: row;
+ justify-content: space-between ;
+}
+
+h1 {
+ font-size: 4.5rem;
+}
+
+nav ul {
+ margin-top: 1rem;
+ display: flex;
+ flex-direction: column;
+ padding: 2rem 1rem 1rem 1rem;
+ text-align: center;
+ font-size: 110%;
+}
+
 
 main {
  grid-area: main;
