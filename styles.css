@@ -70,10 +70,6 @@ footer {
   min-height: 100vh;
  }
 
- nav ul {
-  display: flex;
-  flex-direction: column;
- }
 }
 
 @media (min-width:1025px){
