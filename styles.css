@@ -14,11 +14,14 @@ body {
 
 header {
  grid-area: header;
- border: 5px solid red;
  background-color: black;
  display: flex;
  flex-direction: row;
  justify-content: space-between ;
+}
+
+.img-golden{
+ width: auto;
 }
 
 h1 {
