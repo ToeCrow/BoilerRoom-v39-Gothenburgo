@@ -1,0 +1,18 @@
+main {
+    background-color: rgb(207, 220, 210);
+}
+header {
+    background-color: black;
+}
+
+nav {
+    background-color: rgb(200, 223, 209);
+}
+
+aside {
+background-color: rgb(56, 112, 71);
+}
+
+footer {
+    background-color: slategray;
+}
