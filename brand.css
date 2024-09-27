@@ -18,6 +18,7 @@ nav {
     border: none;
     border-top: 2px solid rgb(111, 103, 55);
     color: 2px solid rgb(111, 103, 55);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 nav li a {
     color: rgb(111, 103, 55);
