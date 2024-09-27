@@ -24,6 +24,13 @@ border: none;
 }
 
 footer {
-    background-color: slategray;
-    border: none;
-}
+    grid-area: footer;
+    border: 5px solid rgb(68, 68, 61);
+    background-color: rgb(85, 85, 76);
+    bottom: 0;
+   }
+   
+   #footertext{
+       font-size: 1rem; 
+       padding-left: 10px;
+   }
