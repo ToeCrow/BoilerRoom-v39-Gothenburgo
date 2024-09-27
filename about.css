@@ -1,4 +1,9 @@
 /* Rebecca start */
+.about-body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 .about-container {
     background-color: white;
@@ -7,11 +12,14 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
+    gap: clamp(1rem, 1.5rem, 2rem) clamp(1.5rem, 2rem, 2.5rem); /* space between about-boxes */
+
+    padding: 1rem;
     
 }
 
 .about-box {
-    border: 1px solid rgb(191, 191, 191);
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -19,6 +27,16 @@
     "name picture"
     "description ."
     ;
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 12px;
+
+    /* box placement */
+    gap: 1rem;
+    padding: inherit;
+    padding-top: 1.5rem;
+
+    /* box sizing */
+    min-height: 15rem;
 }
 
 .about-subtitle {
@@ -33,7 +51,9 @@ grid-area: name;
 .about-img {
 grid-area: picture;
 width: 100px;
+border-radius: inherit;
 }
+
 .about-description {
 grid-area: description;
 }
