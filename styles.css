@@ -58,6 +58,14 @@ main {
  border: 5px solid green;
  background-color: rgb(133, 252, 133);
 }
+.images {
+   align-items: center;
+   line-clamp: 20% 40% 60%;
+}
+.linkinfo {
+    flex-flow: row;
+    align-items: center;
+}
 
 aside {
  grid-area: aside;
