@@ -5,8 +5,6 @@
 }
 
 .about-container {
-    background-color:  hsl(0, 0%, 12%);
-    color: white;
     max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +27,7 @@
     ". . picture"
     "description description description"
     ;
-    background-color: #293031;
+
     /* border: 1px solid #827f4a; */
     border-radius: 12px;
     box-shadow: #1f1f1f;
