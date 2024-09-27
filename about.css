@@ -11,7 +11,7 @@
 .about-container {
     width: clamp(80rem, 100rem, 120rem);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -23,8 +23,9 @@
 }
 
 .about-subtitle {
-    width: clamp(20rem, 50rem, 100rem);
+    width: 100%;
     font-size: clamp(4rem, 5rem, 6rem);
+    margin-left: 2rem;
 }
 
 /* cards */
