@@ -6,7 +6,8 @@ header {
 }
 
 nav {
-    background-color: rgb(200, 223, 209);
+    background-color: rgb(23, 23, 23);
+    border: 2px solid rgb(111, 103, 55);
 }
 
 aside {
