@@ -1,0 +1,36 @@
+main {
+    background-color: rgb(207, 220, 210);
+    border: none;
+}
+header {
+    background-color: black;
+    border: none;
+}
+
+nav {
+    background-color: rgb(23, 23, 23);
+    border: none;
+    border-top: 2px solid rgb(111, 103, 55);
+    color: 2px solid rgb(111, 103, 55);
+}
+nav li a {
+    color: rgb(111, 103, 55);
+    /* text-decoration: none; */
+}
+
+aside {
+background-color: rgb(56, 112, 71);
+border: none;
+}
+
+footer {
+    grid-area: footer;
+    border: 5px solid rgb(68, 68, 61);
+    background-color: rgb(85, 85, 76);
+    bottom: 0;
+   }
+   
+   #footertext{
+       font-size: 1rem; 
+       padding-left: 10px;
+   }
