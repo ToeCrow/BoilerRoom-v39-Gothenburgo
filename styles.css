@@ -21,7 +21,9 @@ header {
 }
 
 .img-golden{
- width: auto;
+ width: 200px;
+ border: 0px solid black;
+ border-radius: 9999px;
 }
 
 h1 {
