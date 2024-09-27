@@ -48,10 +48,17 @@ aside {
 }
 
 footer {
- grid-area: footer;
  border: 5px solid yellow;
  background-color: rgb(245, 245, 154);
  bottom: 0;
+ display: flex;
+ flex-direction: column-reverse;
+ justify-content: center;
+}
+
+footer, h1, p{
+    font-size: 1rem; 
+    padding-left: 10px;
 }
 
 @media (min-width:481px){
