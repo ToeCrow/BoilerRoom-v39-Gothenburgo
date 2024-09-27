@@ -5,7 +5,8 @@
 }
 
 .about-container {
-    background-color: white;
+    background-color: black;
+    color: white;
     max-width: 800px;
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +28,7 @@
     ". . picture"
     "description description description"
     ;
-    border: 1px solid rgb(191, 191, 191);
+    border: 1px solid rgb(39, 39, 39);
     border-radius: 12px;
 
     /* box placement */
@@ -37,6 +38,11 @@
 
     /* box sizing */
     min-height: 15rem;
+}
+
+.about-box:hover {
+    scale: 102%;
+    transition: 3ms;
 }
 
 .about-subtitle {
@@ -52,6 +58,12 @@ grid-area: name;
 grid-area: picture;
 width: 100px;
 border-radius: inherit;
+}
+
+.about-img:hover {
+    scale: 150%;
+    transition: 3ms;
+    
 }
 
 .about-description {
