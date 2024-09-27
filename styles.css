@@ -17,6 +17,12 @@ body {
 header {
  grid-area: header;
  display: flex;
+ flex-direction: row;
+ justify-content: space-between ;
+}
+
+.img-golden{
+ width: auto;
 }
 
 h1{
