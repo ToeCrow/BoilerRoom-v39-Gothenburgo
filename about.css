@@ -1,6 +1,7 @@
 /* Rebecca start */
 .about-main {
     box-sizing: border-box;
+
 }
 
 .about-container {
@@ -19,11 +20,12 @@
 
 .about-box {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr auto 3fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-    "name picture"
-    "description ."
+    "name . picture"
+    ". . picture"
+    "description description description"
     ;
     border: 1px solid rgb(191, 191, 191);
     border-radius: 12px;
