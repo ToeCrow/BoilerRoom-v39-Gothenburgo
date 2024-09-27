@@ -15,14 +15,25 @@ body{
 
 header {
     grid-area: header;
-    border: 5px solid red;
-    background-color: rgb(248, 117, 117);
+    background-color: black;
+    color: white;
+    height: 100px;
+    font-size: 1.6rem;
+   }
+
+main{
+    background-color: rgb(207, 220, 210);
+    border: none;
    }
 
 nav{
     grid-area: nav;
- border: 5px solid blue;
- background-color: rgb(98, 98, 255);
+    background-color: rgb(23, 23, 23);
+    border: none;
+    border-top: 2px solid rgb(111, 103, 55);
+    color: 2px solid rgb(111, 103, 55);
+    font-size: 2rem;
+    height: 100px;
 }
 
 nav ul {
@@ -31,9 +42,15 @@ nav ul {
 }        
     
 nav li {
-    margin: 2% 5%;
+    margin: 0% 7%;
     list-style-type: none;
 }
+
+nav li a {
+    color: rgb(111, 103, 55);
+    text-decoration: none; 
+}
+
 
 .img-container{
     display: flex;
@@ -41,14 +58,125 @@ nav li {
     align-items: center;
 }
 
+.img-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    padding: 20px;
+}
+
+.partner-section {
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: center; 
+    width: 30%; 
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
 .bilder {
-    width: 33%;
-    margin-bottom: 10px; 
+    width: 100%; 
+}
+
+article {
+    text-align: center; 
+    padding: 10px;
+}
+
+article a {
+    color: black; 
+    text-decoration: none; 
+}
+
+article a:hover {
+    color: green; 
+    text-decoration: underline; 
 }
 
 footer {
     grid-area: footer;
-    border: 5px solid yellow;
-    background-color: rgb(245, 245, 154);
+    border: 5px solid rgb(68, 68, 61);
+    background-color: rgb(85, 85, 76);
     bottom: 0;
 }
+
+footer, a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Media query för iPad (stående) */
+@media screen and (max-width: 768px) {
+    body {
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "img"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto auto;
+    }
+
+    nav ul {
+        flex-direction: column; /* Ändrar navigationen till vertikal */
+        align-items: center;    /* Centrerar listan */
+    }
+
+    nav li {
+        margin: 10px 0; /* Ger lite mellanrum mellan navigationslänkarna */
+    }
+
+    .img-container {
+        flex-direction: column; /* Ändrar bilderna till vertikalt */
+        align-items: center;
+    }
+
+    .partner-section {
+        width: 100%; /* Gör partner-sektionen bredare för att passa skärmen */
+    }
+
+    article {
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Media query för iPhone (stående) */
+@media screen and (max-width: 480px) {
+    body {
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "img"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto auto;
+    }
+
+    nav ul {
+        flex-direction: column; /* Vertikal navigation för iPhone */
+        align-items: center;    /* Centrerar navigationen */
+    }
+
+    nav li {
+        margin: 10px 0; /* Ger avstånd mellan navigationselementen */
+    }
+
+    .img-container {
+        flex-direction: column; /* Bilderna staplas vertikalt */
+        align-items: center;
+    }
+
+    .partner-section {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+
+    article {
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
+
