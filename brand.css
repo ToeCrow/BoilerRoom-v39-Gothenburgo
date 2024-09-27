@@ -5,8 +5,11 @@ background-color: black;
 main {
     background-color: black;
     border: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Michroma', 'Josefin Sans', 'Lucida Sans', sans-serif;
 }
+
+h2 {letter-spacing: .08rem;}
+h2 {letter-spacing: .05rem;}
 
 header {
     background-color: rgb(24, 24, 24);
