@@ -11,6 +11,11 @@ nav {
     background-color: rgb(23, 23, 23);
     border: none;
     border-top: 2px solid rgb(111, 103, 55);
+    color: 2px solid rgb(111, 103, 55);
+}
+nav li a {
+    color: rgb(111, 103, 55);
+    /* text-decoration: none; */
 }
 
 aside {
