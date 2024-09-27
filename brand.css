@@ -26,6 +26,7 @@ nav {
     background-color: rgb(23, 23, 23);
     border: none;
     border-top: 2px solid rgb(198, 173, 97);
+    border-bottom: 2px solid rgb(198, 173, 97);
     color: 2px solid rgb(198, 173, 97);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -54,7 +55,7 @@ footer {
 
    /* about */
 .about-box {
-    background-color: #293031;
+    background-color: #272a2a;
 }
 
 .about-container {
