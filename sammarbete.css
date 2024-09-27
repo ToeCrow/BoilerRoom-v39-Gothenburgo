@@ -119,21 +119,21 @@ footer, a{
     }
 
     nav ul {
-        flex-direction: column; /* Ändrar navigationen till vertikal */
-        align-items: center;    /* Centrerar listan */
+        flex-direction: column; 
+        align-items: center;   
     }
 
     nav li {
-        margin: 10px 0; /* Ger lite mellanrum mellan navigationslänkarna */
+        margin: 10px 0; 
     }
 
     .img-container {
-        flex-direction: column; /* Ändrar bilderna till vertikalt */
+        flex-direction: column; 
         align-items: center;
     }
 
     .partner-section {
-        width: 100%; /* Gör partner-sektionen bredare för att passa skärmen */
+        width: 100%; 
     }
 
     article {
@@ -156,12 +156,12 @@ footer, a{
     }
 
     nav ul {
-        flex-direction: column; /* Vertikal navigation för iPhone */
-        align-items: center;    /* Centrerar navigationen */
+        flex-direction: column; 
+        align-items: center;    
     }
 
     nav li {
-        margin: 10px 0; /* Ger avstånd mellan navigationselementen */
+        margin: 10px 0; 
     }
 
     .img-container {
