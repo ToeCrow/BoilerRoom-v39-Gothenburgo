@@ -24,6 +24,7 @@ header h1 {
     font-weight: lighter;
     letter-spacing: .8rem;
     word-spacing: 1rem;
+    
 }
 
 nav {
@@ -36,6 +37,7 @@ nav {
 }
 nav li a {
     color: rgb(198, 173, 97);
+    font-size: clamp(.75rem, 2vw, 1.5rem);
     /* text-decoration: none; */
 }
 
@@ -71,3 +73,11 @@ footer {
 .about-img {
     border: 2px solid #827f4a;
     }
+
+    @media (min-width: 1025px) {
+        nav {
+          border-top: none;
+          border-bottom: none;
+        }
+
+      }

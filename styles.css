@@ -1,5 +1,5 @@
 
-/* Thomas börjar här */
+/* Thomas börjar här med header liten skärm */
 body {
  display: grid;
  padding: 0;
@@ -18,52 +18,64 @@ header {
  grid-area: header;
  display: flex;
  flex-direction: column;
+ position: relative;
 }
 
 .img-golden{
  width: auto;
  position: absolute;
  z-index: 1;
- opacity: 70%;
+ opacity: 40%;
+ border-radius: 50%;
+ height: 60%;
+ background-color: black;
+ z-index: 1;
+ left: 50%; 
+ transform: translateX(-50%);
+ top: 0;
 }
 
-h1{
+header h1{
  color: white ;
  z-index: 2;
  text-align: center;
+ display: inline-block;
+}
+
+.nav-links{
+ display: none;
+ list-style: none;
+}
+
+/* Hamburgarmenyn för mobilen */
+.hamburger {
+ /* display: flex; */
+ flex-direction: column;
+ cursor: pointer;
+ display: inline-flex;
+}
+
+.hamburger .line {
+ width: 25px;
+ height: 3px;
+ background-color: white;
+ margin: 4px;
+}
+
+/* När menyn är aktiv på mobiler */
+.nav-active {
+ display: flex;
+ flex-direction: column;
 }
 
 
-nav {
- width: clamp(10rem, 20%, 30%);
- z-index: 2;
- background-color: rgba(0, 0, 0, 0); /* Svart med 50% transparens */
-
-
-}
-
-nav ul {
- gap: clamp(.5rem, .75rem, .8rem);
- flex-direction: row;
-}
-
-nav li {
- list-style-type: none;
- align-items: center;
- z-index: 2;
-}
-
-nav a {
- color: white;
- text-decoration: none;
- font-weight: 700;
-}
+/* Header slut Thomas*/
 
 main {
  grid-area: main;
- border: 5px solid green;
- background-color: rgb(133, 252, 133);
 }
+
+/* Abdi start */
 .headinginfo {
     display: flex;
     flex-direction: row;
@@ -79,7 +91,7 @@ main {
     padding: 5px;
     color: white;
 }
-a {
+.aside a {
     color: white;
     padding: 5px;
     font-size: 20px;
@@ -87,15 +99,16 @@ a {
 
 aside {
  grid-area: aside; 
- border: 5px solid purple;
- background-color:rgb(248, 154, 248);
+ 
 }
+/* Abdi slut */
 
+/* Thomas börjar */
 @media (min-width:481px){
  body {
-  /* display: grid;
+  display: grid;
   padding: 0;
-  margin: 0; */
+  margin: 0;
   grid-template-areas: 
    "header"
    "main"
@@ -105,6 +118,50 @@ aside {
   grid-template-rows: auto 1fr auto auto;
   min-height: 100vh;
  }
+
+ .nav-links{
+  display: flex;
+ }
+
+ nav {
+ 
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0); /* Svart med 50% transparens */
+ }
+
+ 
+ 
+ nav ul {
+  gap: clamp(.5rem, .75rem, .8rem);
+  display: flex;
+  flex-direction: row;
+ }
+ 
+ nav li {
+  list-style-type: none;
+  align-items: center;
+  z-index: 2;
+  margin: 0 auto;
+ }
+ 
+ nav a {
+  text-decoration: none;
+  font-weight: 700;
+ }
+ 
+ nav a:hover {
+  color: rgb(238, 216, 152);
+ }
+ 
+ .current-page {
+  color: rgb(238, 216, 152);
+  border-bottom: 1px solid rgb(238, 216, 152, 0.7);
+  margin-bottom: .1rem;
+ }
+
+ .hamburger {
+  display: none;
+}
 
 }
 
@@ -122,21 +179,29 @@ body {
  min-height: 100vh;
 }
 
+/* Header/Thomas */
 .img-golden{
- border: 1px solid white;
- border-radius: 50%;
- height: 100%;
+ left: auto;
+ transform: none;
+ top: auto;
  position: static;
+ height: 90%;
+ margin: .5rem;
+ opacity: 100%;
 }
 
 header {
- background-color: black;
  flex-direction: row;
- justify-content: space-between ;
+ justify-content: space-around ;
 }
 
-h1 {
- font-size: 3.5rem;
+header h1 {
+ font-size: clamp(3.5rem, 5vw, 5rem);
+ align-self: center;
+}
+
+nav {
+ width: clamp(10rem, 20%, 30%);
 }
 
 nav ul {
