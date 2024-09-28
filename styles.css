@@ -134,6 +134,10 @@ aside {
   min-height: 100vh;
  }
 
+main {
+ margin-top: 1rem;
+}
+
  .nav-links{
   display: flex;
  }
