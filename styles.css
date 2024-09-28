@@ -18,7 +18,9 @@ header {
  grid-area: header;
  display: flex;
  flex-direction: column;
- position: relative;
+ position: fixed;
+ top: 0;
+ width: 100vw;
 }
 
 .img-golden{
@@ -27,7 +29,7 @@ header {
  z-index: 1;
  opacity: 40%;
  border-radius: 50%;
- height: 60%;
+ height: 90%;
  background-color: black;
  z-index: 1;
  left: 50%; 
@@ -40,6 +42,14 @@ header h1{
  z-index: 2;
  text-align: center;
  display: inline-block;
+}
+
+nav{
+ position: absolute;
+ top: 3rem;
+ right: 0;
+ border-bottom: none;
+ border-top: none;
 }
 
 .nav-links{
@@ -72,6 +82,7 @@ header h1{
 /* Header slut Thomas*/
 
 main {
+ margin-top: 7rem;
  grid-area: main;
 }
 
@@ -95,6 +106,10 @@ main {
     color: white;
     padding: 5px;
     font-size: 20px;
+}
+
+.images {
+ width: min(90%, 450px);
 }
 
 aside {
@@ -123,13 +138,19 @@ aside {
   display: flex;
  }
 
+ header{
+  position: relative;
+ }
+
  nav {
- 
+  position: static;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0); /* Svart med 50% transparens */
  }
 
- 
+ .img-golden {
+  height: 60%;
+ }
  
  nav ul {
   gap: clamp(.5rem, .75rem, .8rem);

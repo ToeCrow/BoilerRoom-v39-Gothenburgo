@@ -30,15 +30,14 @@ header h1 {
 nav {
     background-color: rgb(23, 23, 23);
     border: none;
-    border-top: 2px solid rgb(198, 173, 97);
-    border-bottom: 2px solid rgb(198, 173, 97);
+
     color: 2px solid rgb(198, 173, 97);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 nav li a {
     color: rgb(198, 173, 97);
     font-size: clamp(.75rem, 2vw, 1.5rem);
-    /* text-decoration: none; */
+    text-decoration: none;
 }
 
 aside {
@@ -74,10 +73,17 @@ footer {
     border: 2px solid #827f4a;
     }
 
-    @media (min-width: 1025px) {
-        nav {
-          border-top: none;
-          border-bottom: none;
-        }
+@media (min-width: 481px){
+    nav {
+    border-top: 2px solid rgb(198, 173, 97);
+    border-bottom: 2px solid rgb(198, 173, 97);
+}
+}
 
-      }
+@media (min-width: 1025px) {
+    nav {
+        border-top: none;
+        border-bottom: none;
+    }
+
+    }
