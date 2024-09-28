@@ -1,86 +1,119 @@
 /* Rebecca start */
+
+/* left sidebar */
+#about-aside {
+    padding: 2rem;
+}
+
+/* main content */
 .about-main {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 .about-container {
-    width: clamp(80rem, 100rem, 120rem);
+    width: clamp(300px, 100%, 120rem); /* Make the container width responsive */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
-    gap: clamp(1rem, 1.5rem, 2rem) clamp(1.5rem, 2rem, 2.5rem); /* space between about-boxes */
-
+    gap: clamp(1rem, 2.5%, 2rem); /* Adjust gap responsively */
     padding: 1rem;
     
 }
 
 .about-subtitle {
     width: 100%;
-    font-size: clamp(2rem, 3.5rem, 4rem);
+    font-size: clamp(2rem, 2.5rem, 4rem);
     margin-left: 2rem;
+    border-bottom: solid 4px rgba(198, 173, 97, 0.377);
+    padding-bottom: .5rem;
 }
 
 /* cards */
 .about-box {
     display: grid;
-    grid-template-rows: 1fr auto auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "name . picture"
-    ". . picture"
-    "description description description"
-    ;
-
-    /* border: 1px solid #827f4a; */
-    border-radius: 12px;
-    box-shadow: #1f1f1f;
-
-    /* box placement */
+    grid-template-columns: 2fr 1fr; 
+    grid-template-rows: auto auto 7rem auto;
+    grid-template-areas:
+    "name name"
+    "picture about-role"
+    "description description"
+    "about-contact about-contact";
+    width: clamp(20rem, 100%, 25rem); /* Adjust this so it becomes 100% on smaller screens */
+    min-height: auto; /* Adjust height based on content */
     gap: 1rem;
-    padding: inherit;
-    padding-top: 1.5rem;
+    padding: clamp(1rem, 1.5rem, 2rem);
+    margin-bottom: 1rem;
 
-    /* box sizing */
-    width: clamp(20rem, 40rem, 40rem);
-    min-height: 15rem;
+    border-radius: 1rem;
+
+    box-shadow: .5rem .5rem 1rem rgb(28, 28, 28)
 }
 
-.about-box:hover {
-    scale: 102%;
+.about-box:hover { /* HOVER effects */
+    scale: 105%;
     transition: 3ms;
+    box-shadow: none;
+
 }
 
+/* card contents */
 
-.about-name {
-grid-area: name;
-font-size: clamp(3rem, 4rem, 6rem);
-/* text-transform: uppercase; */
+.about-box p { /* card text  */
+    font-size: clamp(1rem, 1.2rem, 1.5rem);
 }
 
-.about-img {
-grid-area: picture;
-width: 100px;
-border-radius: inherit;
-border: 2px solid #827f4a;
-}
-
-.about-img:hover {
-    scale: 150%;
-    transition: 3ms;
+.about-description { grid-area: description;
+    text-align: center; /* center descr. text */
+    border-top: #827f4a1f solid 2px;
+    padding-top: .8rem;
     
 }
 
-.about-description {
-grid-area: description;
-font-size: clamp(2rem, 2.5rem, 3rem);
+.about-role { grid-area: about-role;
+    justify-self: end; /* align right */
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem;
 }
+
+.about-contact { grid-area: about-contact;
+    justify-self: center;
+    border-top: #827f4a1f solid 2px;
+    padding-top: .8rem;
+}
+.about-contact:hover {
+    transition: 3ms;
+    color: gold;
+}
+
+.about-name { grid-area: name;
+    justify-self: end; /* align right */
+    font-size: clamp(1.5rem, 2rem, 2.5rem);
+    margin: 0; /* reset margin */ 
+}
+
+.about-img { grid-area: picture;
+    margin: 0;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: inherit;
+    border: 2px solid #827f4a;
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    overflow: hidden;
+    /*    width: clamp(150px, 50%, 20rem); /* responsive image size */
+}
+
+.about-img img {
+    width: 100%;
+}
+
 
 /* Rebecca end */
