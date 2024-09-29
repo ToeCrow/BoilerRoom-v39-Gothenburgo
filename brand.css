@@ -1,12 +1,19 @@
 body {
-background-color: black;
+background-color: hsl(0, 2%, 11%);
 font-family: 'Michroma', 'Josefin Sans', 'Lucida Sans', sans-serif;
 margin: 0;
 padding: 0;
 }
 
+h1,
+h2,
+h3,
+p {
+    color: white;
+}
+
 main {
-    background-color: black;
+    background-color: hsl(0, 2%, 11%);
     border: none;
     font-family: 'Michroma', 'Josefin Sans', 'Lucida Sans', sans-serif;
 }
@@ -31,7 +38,7 @@ header h1 {
 }
 
 nav {
-    background-color: rgb(23, 23, 23);
+    background-color: rgb(24, 24, 24);
     border: none;
 
     color: 2px solid rgb(198, 173, 97);
@@ -44,7 +51,7 @@ nav li a {
 }
 
 aside {
-background-color: rgb(23, 23, 23);
+background-color: rgb(24, 24, 24);
 border: none;
 color: rgb(241, 236, 229); /* text */
 }
