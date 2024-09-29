@@ -1,5 +1,6 @@
 body {
 background-color: black;
+font-family: 'Michroma', 'Josefin Sans', 'Lucida Sans', sans-serif;
 margin: 0;
 padding: 0;
 }
@@ -34,7 +35,7 @@ nav {
     border: none;
 
     color: 2px solid rgb(198, 173, 97);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 nav li a {
     color: rgb(198, 173, 97);
@@ -45,6 +46,7 @@ nav li a {
 aside {
 background-color: rgb(23, 23, 23);
 border: none;
+color: rgb(241, 236, 229); /* text */
 }
 
 footer {
