@@ -47,11 +47,11 @@ Alla hann inte med sina delar av sidorna. Vi får fortsätta jobba vidare på de
 <!-- Flödesschema -->
 Flödesschema i text:
 1.Visa "skapa konto-sida" – Användaren presenteras med en textbox för att skriva in en e-postadress.
-    Om användarnamnet är upptaget visas ett felmeddelande som säger det.
+    Om användarnamnet är upptaget visas ett felmeddelande som säger det. (Backend) Det här tar den reda på genom att skicka data:n med hjälp av t.ex. api till databasen. Databasen kommer sen scanna igenom data:n som är lagrad och får den en matchning är användarnamnet upptaget. Då skickar den tillbaks data till servern som omvandlas till utdata där felmeddelandet dyker upp. 
     Om användarnamnet inte är upptaget går du vidare till nästa sida.
 
 2.Ny sida, "välj lösenord" – Användaren skriven in ett lösenord.    
-    om lösenordet inte uppfyller kravet kommer ett felmeddelande upp
+    om lösenordet inte uppfyller kravet kommer ett felmeddelande upp.
     om lösenordet godkänns så går man vidare till nästa sida.
 
 3.Ny sida, välj födelsedatum
