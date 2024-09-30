@@ -56,6 +56,10 @@ border: none;
 color: rgb(241, 236, 229); /* text */
 }
 
+aside a{
+    color: white;
+}
+
 footer {
     grid-area: footer;
     border: 5px solid rgb(68, 68, 61);
