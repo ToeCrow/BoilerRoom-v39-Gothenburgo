@@ -111,6 +111,10 @@ main {
  width: min(90%, 450px);
 }
 
+a:hover {
+    color: blue;
+}
+
 aside {
  grid-area: aside; 
 
