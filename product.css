@@ -37,7 +37,9 @@
     max-height: 550px;
 }
 .product:hover {
-    box-shadow: 10px 5px rgba(25, 25, 25, 0.8);
+    box-shadow: 10px 5px rgba(0, 0, 0, 0.8);
+    scale: 105%;
+    transition: 3ms;
 }
 
 .product-subheader2 {
