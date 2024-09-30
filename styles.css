@@ -116,6 +116,10 @@ a {
     font-size: 10px;
 }
 
+a:hover {
+    color: blue;
+}
+
 aside {
  grid-area: aside; 
  border: 5px solid purple;
