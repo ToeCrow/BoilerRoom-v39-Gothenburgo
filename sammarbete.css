@@ -13,44 +13,10 @@ body{
     min-height: 100vh;
 }
 
-/* header {
-    grid-area: header;
-    background-color: black;
-    color: white;
-    height: 100px;
-    font-size: 1.6rem; 
-    } */
-
 main{
     background-color: rgb(207, 220, 210);
     border: none;
    }
-
-/* nav{
-    grid-area: nav;
-    background-color: rgb(23, 23, 23);
-    border: none;
-    border-top: 2px solid rgb(111, 103, 55);
-    color: 2px solid rgb(111, 103, 55);
-    font-size: 2rem;
-    height: 100px;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-}        
-    
-nav li {
-    margin: 0% 7%;
-    list-style-type: none;
-}
-
-nav li a {
-    color: rgb(111, 103, 55);
-    text-decoration: none; 
-} */
-
 
 .img-container{
     display: flex;
@@ -72,6 +38,7 @@ nav li a {
     width: 30%; 
     margin-bottom: 20px;
     font-size: 1.5rem;
+    width: clamp(20%, 30vw, 100%);
 }
 
 .bilder {
@@ -79,8 +46,9 @@ nav li a {
 }
 
 article {
-    text-align: center; 
     padding: 10px;
+    font-size: clamp(1rem, 2vw, 1.5rem); /* Justeras från 1rem till 1.5rem beroende på skärmstorlek */
+    text-align: center; 
 }
 
 article a {
@@ -118,15 +86,6 @@ footer, a{
         grid-template-rows: auto auto 1fr auto auto;
     }
 
-    /* nav ul {
-        flex-direction: column; 
-        align-items: center;   
-    }
-
-    nav li {
-        margin: 10px 0; 
-    } */
-
     .img-container {
         flex-direction: column; 
         align-items: center;
@@ -154,15 +113,6 @@ footer, a{
         grid-template-columns: 1fr;
         grid-template-rows: auto auto 1fr auto auto;
     }
-
-    /* nav ul {
-        flex-direction: column; 
-        align-items: center;    
-    }
-
-    nav li {
-        margin: 10px 0; 
-    } */
 
     .img-container {
         flex-direction: column; /* Bilderna staplas vertikalt */
