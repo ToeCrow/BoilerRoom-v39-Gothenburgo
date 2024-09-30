@@ -9,22 +9,27 @@ __Planering__
 - Ansvaret delades upp för de olika sidorna (4st) samt header + nav och footer
 
 
-__Genomförande & Möten__
+__Genomförande__
 1. Uppstartsmöte med en del av teamet
 2. Eget arbete
 3. Check-in/Stand-up med resten av teamet
 4. Eget arbete
 5. Stand-up med hela teamet
+    1. Vi landade i att ha en övergripande css som heter brand.css för att enkelt få ihop utseendet på de gemensamma elementen relativt enkelt jmfrt med om vi hade behövs gå in i varje css-fil och redigera/lägga till
 6. Eget arbete
 7. Avsluta-dagen-möte
 8. Eget arbete över helg/måndag
 9. Check-in med team (Måndag)
-10. Retrospective
+10. Retrospective 
+    1. Vi hade begränsat med tid för att följa scrum-metodiken och håller med varandra om att det vore kul att testa på ett längre projekt 
+    2. Även tidsbegränsning leder till att vi har mycket överflödig css som t.ex. skrivs över med brand.css — denna hade tagits bort om det fanns tid för optimering
+    3. Fördelning av roller/övergripande ansvar klarad vi oss utan denna gång, men för ett större projekt hade det suttit fint redan från början. Nu växte våra roller fram under projektets gång och vi hade en med mer ansvar över att få samtliga sidor att lira med den övergripande layouten (T).
 
 
 __Uppdelning av css__
 - styles.css för index
 - en css för varje undersida
+- brand.css för att enkelt kunna justera gemensamma färger
 
 __Problem__
 - En commit råkade ta bort 210 inserts med bl.a. media queries
