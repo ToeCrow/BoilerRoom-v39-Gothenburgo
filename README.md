@@ -1,12 +1,38 @@
 # BoilerRoom-v39-Gothenburgo
 Boiler room v39
+<!-- Planering och genomförande -->
+__Planering__
+- Vi la upp grundläggande komponenter / uppgifter i Trello och delade ut ansvaret till gruppmedlemmar
+    - Upplagt enligt Scrum, som vi valt att kalla “Scrum light”
+- Hemsidans övergripande layout och tema diskuterades i en större grupp och ett gemensamt beslut togs
+- Ansvaret för att implementera layout och förse teamet med grundläggande info om temat lades på en gruppmedlem
+- Ansvaret delades upp för de olika sidorna (4st) samt header + nav och footer
 
 
-Uppdelning av css
+__Genomförande & Möten__
+1. Uppstartsmöte med en del av teamet
+2. Eget arbete
+3. Check-in/Stand-up med resten av teamet
+4. Eget arbete
+5. Stand-up med hela teamet
+6. Eget arbete
+7. Avsluta-dagen-möte
+8. Eget arbete över helg/måndag
+9. Check-in med team (Måndag)
+10. Retrospective
+
+
+__Uppdelning av css__
 - styles.css för index
 - en css för varje undersida
 
-stand up 1:
+__Problem__
+- En commit råkade ta bort 210 inserts med bl.a. media queries
+Lösning: 
+- Vi letade i GitHub:s historik och såg till att det synkade över ett möte
+
+<!-- Mötesanteckningar -->
+__stand up 1__
 Vi mergade alla cloner. Då kunde vi se hur långt vi har kommit och planera framåt. 
 Home: Behöver fixa CSS
 product: Ska lägga till media queries och anpassa texten till bilden. Tar bort aside på min sida.
@@ -14,11 +40,11 @@ about: alignment-ändringar
 Header/footer: små ändringar på header. 
 Vi sätter mål att bli klara innan kl17. Stand up 2  kl:16.55
 
-Stand up 2:
+__Stand up 2__
 Alla hann inte med sina delar av sidorna. Vi får fortsätta jobba vidare på det och commita ändringarna så snabbt som möjligt. Vi delar upp det sista arbetet som behöver göras tills på måndag och planerar nästa träff på måndag.
 
 
-
+<!-- Flödesschema -->
 Flödesschema i text:
 1.Visa "skapa konto-sida" – Användaren presenteras med en textbox för att skriva in en e-postadress.
     Om användarnamnet är upptaget visas ett felmeddelande som säger det.
@@ -39,7 +65,7 @@ Flödesschema i text:
 
 
 
-
+<!-- Flödesschema -->
 flödesschema:
 <!DOCTYPE html>
 <html>
