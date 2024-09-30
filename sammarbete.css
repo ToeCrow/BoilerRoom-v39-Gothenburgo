@@ -68,11 +68,6 @@ footer {
     bottom: 0;
 }
 
-footer, a{
-    text-decoration: none;
-    color: white;
-}
-
 /* Media query för iPad (stående) */
 @media screen and (max-width: 768px) {
     body {
